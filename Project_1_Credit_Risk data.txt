@@ -1,0 +1,29 @@
+import pandas as pd
+
+# Load dataset from folder
+data = pd.read_csv('../data/credit_data.csv')
+
+# Placeholder functions - we will fill these tomorrow
+def calculate_credit_score(row):
+    return 0
+
+def calculate_pd(row):
+    return 0
+
+def calculate_lgd(row):
+    return 0
+
+def calculate_ead(row):
+    return row['Current_Balance']
+
+def calculate_expected_loss(row):
+    pd = calculate_pd(row)
+    lgd = calculate_lgd(row)
+    ead = calculate_ead(row)
+    return pd * lgd * ead
+
+# Apply functions to dataset
+data['Expected_Loss'] = data.apply(calculate_expected_loss, axis=1)
+
+print(data.head())
+
