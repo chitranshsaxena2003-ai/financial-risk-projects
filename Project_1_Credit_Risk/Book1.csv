@@ -1,0 +1,5 @@
+Customer_ID,Age,Income,Credit_Limit,Current_Balance,FICO_Score,Months_Delinquent,Employment_Status,Default_Flag
+1001,30,50000,200000,50000,700,0,Employed,0
+1002,45,35000,150000,90000,650,2,Self-employed,0
+1003,28,40000,100000,30000,720,1,Employed,0
+1004,55,30000,120000,110000,600,4,Unemployed,1
